@@ -1,1 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
+
+.bg-jumbo{
+    background-image: url(../img/jumbotron.jpg);
+    height: 400px;
+}
+
+.btn-current-series{
+    position: relative;
+    left: 16%;
+    top: 380px;
+}
