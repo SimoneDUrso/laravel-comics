@@ -1,5 +1,15 @@
 @import '~bootstrap/scss/bootstrap';
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
 .bg-jumbo{
     background-image: url(../img/jumbotron.jpg);
     height: 400px;
@@ -9,4 +19,75 @@
     position: relative;
     left: 16%;
     top: 380px;
+}
+
+
+.blue-section {
+    padding: 50px 0px;
+    z-index: 10; 
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container-full .col-2{
+    width: 13%;
+    span{
+        font-size: 14px;
+    }
+
+    img{
+        width: 50px;
+        height: 65px;
+        object-fit: contain;
+    }
+}
+
+footer {
+    background-color: #303030;
+    height: 150px;
+    z-index: 10;
+    position: relative;
+    
+    button {
+        color: white;
+        transition: background-color 0.4s ease;
+        transition: color 0.3s ease;
+
+        &:hover {
+            background-color: gray;
+            color: black;
+        }
+    }
+
+    img {
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.3;
+        }
+    }
+}
+
+.bg-image{
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    min-height: 460px;
+
+    a{
+        color: rgb(141, 140, 140);
+        transition: color 0.2s ease;
+
+        &:hover{
+            color: white;
+        }
+    }
+
+}
+
+.dc-logo-bg {
+    position: relative;
+    top: -80px;
+    left: 200px;
+    width: 1000px;
+    z-index: 1;
 }
