@@ -29,6 +29,19 @@ body{
     position: relative;
 }
 
+.covers{
+    margin: 20px auto;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.9;
+    
+    img:hover {
+        opacity: 0.5;
+        transform: scale(1.2)
+    }
+}
+
 .container-full .col-2{
     width: 13%;
     span{
@@ -39,6 +52,7 @@ body{
         width: 50px;
         height: 65px;
         object-fit: contain;
+        
     }
 }
 

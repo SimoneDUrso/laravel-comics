@@ -16,7 +16,9 @@
             <div class="row">
                 @foreach ($films as $film)
                     <div class="col-2 text-white">
-                        <img class="img-fluid" src=" {{ $film['thumb'] }} " alt="">
+                        <div class="covers">
+                            <img class="img-fluid" src=" {{ $film['thumb'] }} " alt="">
+                        </div>
                         <h3> {{ $film['series'] }} </h3>
                     </div>
                 @endforeach
@@ -123,8 +125,16 @@
                                 src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
                         </div>
                     </div>
-
-
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-white">All Site Content and <i class="bi bi-c-circle"></i> 2020 DC Entertainment,
+                        unless otherwise <a class="text-decoration-none text-info" href="">noted here</a>. All
+                        rights
+                        reserved. <br>
+                        <a class="text-decoration-none text-info" href="#">Cookies Settings</a>
+                    </p>
                 </div>
             </div>
         </div>
